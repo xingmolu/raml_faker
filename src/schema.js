@@ -58,7 +58,7 @@ var SchemaMocker = function () {
                 return formatRet;
             } else if (schema.type) {
                 var type = schema.type;
-                console.log('type---->'+type);
+
                 if (_.isArray(type)) {
                     type = type[0];
                 }
@@ -101,12 +101,12 @@ var SchemaMocker = function () {
             }
         },
 
-        
+
         nameMocker: function(schema){
             var ret = null,
                 value = schema.value;
 
-            ret = Faker.name[value]();
+            ret = Faker.Name[value]();
             return ret;
         },
 
@@ -114,8 +114,26 @@ var SchemaMocker = function () {
             var ret = null,
                 value = schema.value;
 
-            if(value === "province") value = "state";
-            ret = Faker.address[value]();
+            if(value === "province") value = "cnState";
+            ret = Faker.Address[value]();
+            return ret;
+        },
+
+
+        loremMocker: function(schema){
+            var ret = null,
+                value = schema.value;
+
+            ret = Faker.Lorem[value]();
+            return ret;
+        },
+
+
+        companyMocker: function(schema){
+            var ret = null,
+                value = schema.value;
+
+            ret = Faker.Company[value]();
             return ret;
         },
 
@@ -187,23 +205,7 @@ var SchemaMocker = function () {
             var minLength = schema.minLength || 1;
             var maxLength = schema.maxLength || (minLength < 50 ? 50 : schema.minLength);
             var strLen = _.random(minLength, maxLength);
-            console.log(Faker);
-            ret = Faker.lorem.words(strLen).join(' ').substring(0, strLen).trim();
-            return ret;
-        },
-
-        addressMocker: function(schema){
-            /**
-             * TODO:
-             * all address type
-             * eg: zipCode, city, cityPrefix, citySuffox,StreetName
-             * 
-             */
-            
-            var ret = null;
-            var value = schema.value || 'city';
-            console.log('address--mocker-->' + Faker.address[value]());
-            ret = Faker.address[value]();
+            ret = Faker.Lorem.words(strLen).join('').substring(0, strLen).trim();
             return ret;
         },
 

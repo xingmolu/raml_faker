@@ -6,7 +6,7 @@
 var path = require('path'),
 	fs = require('fs'),
 	async = require('async'),
-	raml = require('raml_parser'),
+	raml = require('raml-parser'),
 	_ = require('lodash'),
 	schemaMocker = require('./src/schema'),
 	RequestMocker = require('./src/requestMocker');
@@ -215,5 +215,3 @@ function generate(options, callback) {
 	        callback(requestsToMock);
 	    });
 	}
-
-};
