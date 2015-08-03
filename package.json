@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "async": "^1.4.0",
-    "faker": "^3.0.0",
+    "faker-zh-cn": "^0.5.8",
     "lodash": "^3.10.0",
     "raml-parser": "^0.8.7"
   }
