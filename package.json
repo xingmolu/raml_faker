@@ -1,0 +1,29 @@
+{
+  "name": "raml_faker",
+  "version": "0.0.1",
+  "description": "使用raml_parse来解析raml，使用faker.js来模拟数据",
+  "url": "https://github.com/xingmolu/raml_faker",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xingmolu/raml_faker/blob/master/LICENSE"
+    }
+  ],
+  "bug": "https://github.com/xingmolu/raml_faker/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xingmolu/raml_faker"
+  },
+  "dependencies": {
+    "async": "^1.4.0",
+    "faker-zh-cn": "^0.5.8",
+    "lodash": "^3.10.0",
+    "raml-parser": "^0.8.7"
+  },
+  "devDependencies": {
+    "async": "^1.4.0",
+    "faker": "^3.0.0",
+    "lodash": "^3.10.0",
+    "raml-parser": "^0.8.7"
+  }
+}
