@@ -12,10 +12,6 @@
                         "type": "name",
                         "value": "findName"
                     },
-                    "country": {
-                        "type": "address",
-                        "value": "country"
-                    },
                     "province": {
                         "type": "address",
                         "value": "province"
@@ -23,7 +19,7 @@
 
                     "abbr": {
                         "type": "address",
-                        "value": "stateAbbr"
+                        "value": "streetAddress"
                     },
 
                     "city": {
@@ -37,8 +33,18 @@
                     },
 
                     "phoneNumber": {
-                        "type": "phone",
+                        "type": "PhoneNumber",
                         "value": "phoneNumber"
+                    },
+
+                    "company": {
+                        "type": "company",
+                        "value": "companyName"
+                    },
+
+                    "info": {
+                        "type": "string",
+                        "maxLength": "20"
                     }
                 },
                 "required": ["name", "city", "province", "phoneNumber"]
