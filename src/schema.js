@@ -119,6 +119,15 @@ var SchemaMocker = function () {
             return ret;
         },
 
+        /*
+         * 图片的模拟
+         */
+        imageMocker: function(schema, wholeSchema){
+            var value = schema.value;
+            console.log(Faker.image);
+            return Faker.image[value](schema.width, schema.height);
+        },
+
 
         loremMocker: function(schema){
             var ret = null,
