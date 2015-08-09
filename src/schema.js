@@ -58,7 +58,6 @@ var SchemaMocker = function () {
                 return formatRet;
             } else if (schema.type) {
                 var type = schema.type;
-
                 if (_.isArray(type)) {
                     type = type[0];
                 }
@@ -124,7 +123,6 @@ var SchemaMocker = function () {
          */
         imageMocker: function(schema, wholeSchema){
             var value = schema.value;
-            console.log(Faker.image);
             return Faker.image[value](schema.width, schema.height);
         },
 
@@ -254,6 +252,7 @@ var SchemaMocker = function () {
              * TODO:
              * minimum and exclusiveMinimum
              */
+
             if (schema.multipleOf) {
                 var multipleMin = 1;
                 var multipleMax = 5;
@@ -295,8 +294,13 @@ var SchemaMocker = function () {
 
 
 
-        numberMocker: function (schema) {
-            return this._numberMocker(schema, true);
+        randomMocker: function (schema) {
+            //return this._numberMocker(schema, true);
+
+            var value = schema.value;
+
+            return Faker.random[value](schema);
+
         },
 
         integerMocker: function (schema) {
