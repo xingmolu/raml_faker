@@ -1,7 +1,7 @@
 'use strict';
 var _ = require('lodash');
 var fs = require('fs');
-var Faker = require('faker-zh-cn');
+var Faker = require('faker-cn');
 var FormatMocker = require('./format');
 
 

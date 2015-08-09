@@ -1,6 +1,6 @@
 'use strict';
 var _ = require('lodash');
-var Faker = require('faker-zh-cn');
+var Faker = require('faker-cn');
 
 var defaultFormats = {
     'id': function (Faker, schema) {
