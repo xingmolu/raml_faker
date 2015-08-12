@@ -36,10 +36,13 @@
 
 ### 示例
 ```javascript
-{
+"background": {
     "type": "random",
     "value": "color"
 }
+
+// "background": 将返回一个色值
+
 ```
 如果对象中包含 `key` 为 `actual` 时，将直接返回其value的值。
 
