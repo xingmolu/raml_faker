@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "async": "^1.4.0",
-    "faker-cn": "^0.0.3",
+    "faker-cn": "^0.0.5",
     "lodash": "^3.10.0",
     "raml-parser": "^0.8.7"
   },
   "devDependencies": {
     "async": "^1.4.0",
-    "faker-cn": "^0.0.3",
+    "faker-cn": "^0.0.5",
     "lodash": "^3.10.0",
     "raml-parser": "^0.8.7"
   }

@@ -68,6 +68,9 @@ var SchemaMocker = function () {
                 } else {
                     return undefined;
                 }
+            }else if (schema.actual){
+                return this['value'];
+
             } else {
                 return undefined;
             }
