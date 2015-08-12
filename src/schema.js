@@ -69,7 +69,7 @@ var SchemaMocker = function () {
                     return undefined;
                 }
             }else if (schema.actual){
-                return this['value'];
+                return schema['value'];
 
             } else {
                 return undefined;
